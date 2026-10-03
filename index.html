@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>АРХИВ // ЗАПИСЬ 07.11.1998</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Эффекты поверх всего -->
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+    <div class="noise"></div>
+
+    <!-- Основной терминал -->
+    <div class="terminal">
+        <div class="terminal-header">
+            <span>СИСТЕМА: АРХИВ-7</span>
+            <span class="blink">● REC</span>
+        </div>
+
+        <div class="terminal-body" id="output">
+            <p class="line">> ЗАГРУЗКА АРХИВА...</p>
+            <p class="line">> ДАТА: 07.11.1998</p>
+            <p class="line">> СТАТУС: <span class="warn">ПОВРЕЖДЁН</span></p>
+            <p class="line">> ВВЕДИТЕ КОМАНДУ:</p>
+        </div>
+
+        <div class="terminal-input">
+            <span class="prompt">></span>
+            <input type="text" id="cmd" autocomplete="off" autofocus>
+        </div>
+    </div>
+
+    <!-- Фоновая музыка -->
+    <audio id="bg-music" loop>
+        <source src="background.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио.
+    </audio>
+
+    <!-- Подсказка для запуска -->
+    <div class="audio-hint" id="audioHint">[ НАЖМИТЕ ДЛЯ АКТИВАЦИИ АУДИО ]</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
